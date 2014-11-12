@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Nodes</key>
+	<array>
+		<string>Application</string>
+		<string>Base</string>
+		<string>View</string>
+		<string>Model</string>
+		<string>Controller</string>
+		<string>Handler</string>
+		<string>Categories</string>
+		<string>External</string>
+		<string>Macro</string>
+		<string>Network</string>
+		<string>Util</string>
+		<string>Storage</string>
+		<string>Database</string>
+		<string>Resources</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Application</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Application</string>
+		</dict>
+		<key>Base</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Base</string>
+		</dict>
+		<key>View</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/View</string>
+		</dict>
+		<key>Model</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Model</string>
+		</dict>
+		<key>Controller</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Controller</string>
+		</dict>
+		<key>Handler</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Handler</string>
+		</dict>
+		<key>Categories</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Categories</string>
+		</dict>
+		<key>External</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/External</string>
+		</dict>
+		<key>Macro</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Macro</string>
+		</dict>
+		<key>Network</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Network</string>
+		</dict>
+		<key>Util</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Util</string>
+		</dict>
+		<key>Storage</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Storage</string>
+		</dict>
+		<key>Database</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Database</string>
+		</dict>
+		<key>Resources</key>
+		<dict>
+			<key>Path</key>
+			<string>./Framework/Resources</string>
+		</dict>
+	</dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.emptyApplication</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaTouchApplicationBase</string>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>HRK个人使用空应用模板，包含常用使用文件架构</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+// Override point for customization after application launch.
+self.window.backgroundColor = [UIColor whiteColor];</string>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>[self.window makeKeyAndVisible];
+return YES;
+</string>
+					</dict>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+// Override point for customization after application launch.
+self.window!.backgroundColor = UIColor.whiteColor()</string>
+						<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>self.window!.makeKeyAndVisible()
+return true
+</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
